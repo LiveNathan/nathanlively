@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nathan Lively | Full-stack Java Developer</title>
+  <meta name="description" content="Personal website of Nathan Lively, a full-stack Java developer specializing in the AV and live sound industry.">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Nathan Lively</h1>
+      <p class="tagline">Full-stack Java developer. AV industry specialist.</p>
+    </header>
+
+    <main>
+      <section id="active-projects">
+        <h2>Active Projects</h2>
+        <p class="intro">Things I'm currently building or maintaining.</p>
+        <ul id="project-list" class="projects">
+          <li>
+            <a href="https://aid.nathanlively.com/">AidRunner</a>
+            <p>Route optimizer for mutual aid delivery volunteers. Add stops, hit Solve, get a printable route for each driver — optimized across the whole crew. No data stored, nothing routed through Google.</p>
+          </li>
+          <li>
+            <a href="https://consolewhisperer.com">Console Whisperer</a>
+            <p>Desktop app for live sound engineers. Describe your show in plain language and it configures channel names, colors, and routing in Mixing Station. $37 one-time purchase, works offline with Ollama.</p>
+          </li>
+          <li>
+            <a href="https://www.subaligner.com/">SubAligner</a>
+            <p>Web app for acoustic source alignment. Helps sound engineers calculate delay and polarity between speaker arrays. Actively used by customers; maintenance mode.</p>
+          </li>
+          <li>
+            <a href="https://trace-book.org/">TraceBook</a>
+            <p>Project and portfolio tracker for AV professionals. Log your gigs, document your setups, build a searchable history of your work. Actively used by customers; maintenance mode.</p>
+          </li>
+          <li>
+            <!-- TODO: Nathan, please review this description for B2B Demand Generation Strategy -->
+            <a href="https://www.b2bdemandgenerationstrategy.com/">B2B Demand Generation Strategy</a>
+            <p>Free tool for B2B marketers. Strategic framework and toolset designed to help B2B marketers build and scale their demand generation engines.</p>
+          </li>
+          <li>
+            <a href="https://nathanlively.substack.com/">Personal Blog</a>
+            <p>Building in public: shipping notes, failure logs, and the occasional tech deep dive.</p>
+          </li>
+        </ul>
+        <script>
+          (function() {
+            const list = document.getElementById('project-list');
+            for (let i = list.children.length; i >= 0; i--) {
+              list.appendChild(list.children[Math.random() * i | 0]);
+            }
+          })();
+        </script>
+      </section>
+
+      <section id="legacy-projects">
+        <h2>Legacy Projects</h2>
+        <p class="intro">Things I built that are no longer active.</p>
+        <ul class="projects">
+          <li>
+            <a href="https://www.sounddesignlive.com/">Sound Design Live</a>
+            <p>Online school and podcast for live sound engineers. 789K podcast downloads, 200+ published articles, 60+ industry interviews. Winding down after many years.</p>
+          </li>
+          <li>
+            <span class="offline-project">GainGuardian</span>
+            <p>Audio gain management tool. Watched for user interest; didn't get enough traction to keep the lights on.</p>
+          </li>
+          <li>
+            <a href="https://youtu.be/gzFS4uZFNok?si=YRiLhNw0PlH4KEy3">Phase Invaders</a>
+            <p>A game about phase cancellation and sound wave interference. Link goes to demo video.</p>
+          </li>
+          <li>
+            <span class="offline-project">AV Technician Directory</span>
+            <p>A searchable directory connecting audio, visual, and lighting technicians with event producers. Got real signups and engagement over 3-4 months. Took it down when hiring activity didn't materialize.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://api.staticforms.dev/submit" method="POST">
+          <input type="hidden" name="apiKey" value="sf_abce64l6kdl6d0cgcjkm6hk3">
+          <input type="hidden" name="redirectTo" value="https://nathanlively.com">
+          <input type="hidden" name="replyTo" value="nathan@nathanlively.com">
+          <input type="text" name="honeypot" style="display:none">
+          
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Find me elsewhere:</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/LiveNathan">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/nathanlively">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@nathanlively">YouTube</a></li>
+        <li><a href="https://bsky.app/profile/nathanlively.bsky.social">Bluesky</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
